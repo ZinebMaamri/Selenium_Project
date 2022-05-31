@@ -6,8 +6,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.WebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import import org.openqa.selenium.remote.DesiredCapabilities;
+
 
 public class JenkinsHomepageTest extends AbstractJenkinsHomepage {
   @BeforeAll
