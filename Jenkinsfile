@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  tools{
+      maven "maven-3.6.3"
+  }
   stages {
     stage('Verify browsers are installed') {
       steps {
@@ -8,7 +11,7 @@ pipeline {
     }
     stage('Run Tests') {
       steps {
-        sh './mvnw clean test'
+        sh 'mvn clean test'
       }
     }
   }
