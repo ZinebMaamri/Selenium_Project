@@ -81,10 +81,11 @@
 
         <groupId>org.apache.maven.plugins</groupId>  
         <artifactId>maven-surefire-plugin</artifactId>  
-        <version>3.0.0-M5</version>  
-        <!-- <configuration>  
-          <skipTests>true</skipTests>  
-        </configuration>  -->
+        <version>3.0.0-M5</version>
+        <>test</>  
+        <configuration>  
+          <skipTests>false</skipTests>  
+        </configuration>  
         </plugin> 
 
         <plugin>

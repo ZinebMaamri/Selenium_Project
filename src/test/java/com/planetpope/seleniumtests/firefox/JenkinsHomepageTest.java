@@ -17,8 +17,11 @@ public class JenkinsHomepageTest extends AbstractJenkinsHomepage {
 
   @BeforeEach
   void setupTest() {
-    FirefoxOptions options = new FirefoxOptions();
+    /*FirefoxOptions options = new FirefoxOptions();
     options.addArguments("--headless");
-    driver = new FirefoxDriver(options);
+    driver = new FirefoxDriver(options);*/
+   DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+   capabilities.setCapability("marionette", true);
+   WebDriver driver = new FirefoxDriver(capabilities);
   }
 }
