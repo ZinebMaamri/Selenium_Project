@@ -1,1 +1,1 @@
-# jenkins-example-selenium-tests
+#selenium-tests
